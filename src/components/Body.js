@@ -1,16 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
-/***
- * hooks : normal js utility functions
- * useState
- * useEffect
- * whenever a state variable is chages React re-renders the component
- * Reconcilliation algorithm: also known as react fiber (React 16), whenever something changes on UI , called reconciliation
- * Virtual DOM: it is the representation of the real DOM,  it is nothing but a normal JS object which for example get returned from React.createElement({}),  it is a nested object of the component
- * Diff algorithm: basically finds the difference between two DOMs, then calculates and actually update the DOM
- * React is fast because of efficient DOM manipulations
- * */
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
