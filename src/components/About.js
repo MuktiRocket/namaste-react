@@ -8,7 +8,6 @@ class About extends Component {
   render() {
     return (
       <div>
-        <h1>About Class Component</h1>
         <UserClass
           name={"Jaydeep Sarkar (Class)"}
           location={"Dehradun Class"}
