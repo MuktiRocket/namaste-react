@@ -1,6 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 
-const ItemList = ({ items }) => {
+const ItemsList = ({ items }) => {
   return (
     <div>
       {items.map((item) => (
@@ -26,7 +26,7 @@ const ItemList = ({ items }) => {
                 Add +
               </button>
             </div>
-            <img src={CDN_URL + item.card.info.imageId} className="w-auto" />
+            <img src={CDN_URL + item.card.info.imageId} className="w-28" />
           </div>
         </div>
       ))}
@@ -34,4 +34,4 @@ const ItemList = ({ items }) => {
   );
 };
 //1:34
-export default ItemList;
+export default ItemsList;
