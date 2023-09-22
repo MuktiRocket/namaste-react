@@ -13,7 +13,7 @@ export default class UserClass extends React.Component {
     };
   }
   async componentDidMount() {
-    const data = await fetch("https://api.github.com/users/akshaymarch7");
+    const data = await fetch("https://api.github.com/users/MuktiRocket");
     const json = await data.json();
     this.setState({
       userInfo: json,
